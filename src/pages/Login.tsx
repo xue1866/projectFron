@@ -12,9 +12,10 @@ export default function Login() {
       console.log(form);
       
       let {data:{code,user}} = await request.get('/users/login',{params:form})
+        console.log(user,code)
+      
       if(code===200){
         console.log(user)
-        console.log(user.user)
         
         sessionStorage.setItem('sender',JSON.stringify(user._id))
         sessionStorage.setItem('name',JSON.stringify(user.user))
