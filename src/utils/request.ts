@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 const request = axios.create({
-  baseURL: 'http://localhost:3000', 
+  baseURL: 'https://projectback-jssa.onrender.com', 
   timeout: 50000, 
 })
 
