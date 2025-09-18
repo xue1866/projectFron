@@ -12,7 +12,7 @@ export default function Login() {
       console.log(form);
       
       let {data:{code,user}} = await request.get('/users/login',{params:form})
-        console.log(user,code)
+        console.log("user,code:",user,code)
       
       if(code===200){
         console.log(user)
