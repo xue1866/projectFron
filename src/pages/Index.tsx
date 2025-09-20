@@ -103,7 +103,7 @@ function Index() {
     if (!receiverIds) return;
     const interval = setInterval(() => {
       fetchMessages(receiverId.current);
-    }, 5000); // 每 5 秒拉取一次
+    }, 1000); // 每 5 秒拉取一次
     return () => clearInterval(interval);
   }, [receiverIds]);
 
