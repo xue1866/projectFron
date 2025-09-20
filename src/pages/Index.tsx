@@ -48,7 +48,7 @@ function Index() {
   // 连接
   let WebSockets = () => {
     if (ws.current) return;
-    ws.current = new WebSocket("wss://projectback-jssa.onrender.com?user=" + senderId);
+    ws.current = new WebSocket("wss://projectback-jssa.onrender.com/?user=" + senderId);
 
     ws.current.onopen = () => {
       console.log("连接成功");
